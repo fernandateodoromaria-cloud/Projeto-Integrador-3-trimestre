@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos: Tecnologia, Ética e Acessibilidade</title>
+    <style>
+        /* Estilos gerais do site */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        
+        /* Estilos das Abas */
+        .tab {
+            overflow: hidden;
+            background-color: #34495e;
+            display: flex;
+            justify-content: center;
+        }
+        .tab button {
+            background-color: inherit;
+            color: white;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 24px;
+            transition: 0.3s;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .tab button:hover {
+            background-color: #1abc9c;
+        }
+        .tab button.active {
+            background-color: #1abc9c;
+        }
+
+        /* Estilos do Conteúdo das Abas */
+        .tabcontent {
+            display: none;
+            padding: 30px;
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        /* Imagens e Códigos */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 15px 0;
+            display: block;
+        }
+        pre {
+            background-color: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        h2, h3 {
+            color: #2c3e50;
+            border-bottom: 2px solid #1abc9c;
+            padding-bottom: 5px;
+        }
+        .tabela-comparativa {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .tabela-comparativa th, .tabela-comparativa td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        .tabela-comparativa th {
+            background-color: #2c3e50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Portfólio de Projetos: Tecnologia & Robótica</h1>
+        <p>Soluções para Qualidade de Vida e Acessibilidade</p>
+    </header>
+
+    <!-- Botões das Abas -->
+    <div class="tab">
+        <button class="tablinks" onclick="abrirAba(event, 'AbaProgramacao')" id="abaPadrao">Projeto: Programação & IA</button>
+        <button class="tablinks" onclick="abrirAba(event, 'AbaRobotica')">Projeto: Robótica & Acessibilidade</button>
+    </div>
+
+    <!-- CONTEÚDO DA ABA 1: PROGRAMAÇÃO -->
+    <div id="AbaProgramacao" class="tabcontent">
+        <h2>Tecnologia, Ética e Qualidade de Vida</h2>
+        <p>Utilizando a metodologia de Aprendizagem Baseada em Projetos (ABP), nosso objetivo é criar ferramentas que melhorem a acessibilidade e a qualidade de vida das pessoas utilizando Python e Inteligência Artificial.</p>
+        
+        <!-- Imagem de Exemplo -->
+        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="Código de programação na tela">
+
+        <h3>Atividade 1: Cofre Digital com Criptografia</h3>
+        <p>Desenvolvimento de um programa em Python para proteger dados confidenciais (contatos, senhas), ajudando pessoas com dificuldades tecnológicas a evitar golpes.</p>
+
+        <h3>Atividade 2: Explorando LLMs (Inteligência Artificial)</h3>
+        <p>Testes práticos de Engenharia de Prompt para tradução automática, leitura facilitada e apoio à comunicação de pessoas com deficiência visual.</p>
+        
+        <!-- Imagem de Exemplo -->
+        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80" alt="Inteligência Artificial">
+
+        <h3>Atividade 3: Modelo Computacional Nutricional</h3>
+        <p>Desenvolvimento de uma calculadora nutricional interativa para apoiar decisões alimentares conscientes (idosos, diabéticos, etc).</p>
+        
+        <h4>Código-Base em Python:</h4>
+<pre><code># Calculadora Nutricional Interativa
+tabela_alimentos = {
+    "maca": {"calorias": 52, "carboidratos": 14.0, "proteinas": 0.3, "sodio": 1.0},
+    "arroz": {"calorias": 130, "carboidratos": 28.0, "proteinas": 2.7, "sodio": 1.0}
+}
+
+def calculadora_nutricional():
+    print("=== Calculadora Nutricional Acessível ===")
+    total_calorias = 0
+    # Adicione a lógica do loop aqui conforme mostrado anteriormente...
+    print("🔥 Calorias Totais calculadas com sucesso!")
+
+if __name__ == "__main__":
+    calculadora_nutricional()
+</code></pre>
+    </div>
+
+    <!-- CONTEÚDO DA ABA 2: ROBÓTICA -->
+    <div id="AbaRobotica" class="tabcontent">
+        <h2>Projeto de Robótica: Comunicação e Acessibilidade</h2>
+        <p>Pesquisa e explicação de três recursos (Matriz de LEDs, Código Morse e Display) relacionando o funcionamento a situações reais de comunicação e acessibilidade.</p>
+
+        <h3>1. Matriz de LEDs</h3>
+        <p>Uma matriz de LEDs forma imagens ou mensagens organizando pequenas luzes que acendem de forma coordenada. Ideal para transmitir emoções ou avisos à distância.</p>
+        <!-- Substitua pelo link da imagem ou print do Tinkercad do seu grupo -->
+        <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?auto=format&fit=crop&w=800&q=80" alt="Matriz de LEDs iluminada">
+
+        <h3>2. Código Morse</h3>
+        <p>Representa letras por meio de sinais curtos e longos (luminosos ou sonoros). Pode ser emitido por um circuito simples com LED ou Buzzer para pedidos de ajuda.</p>
+        <img src="https://images.unsplash.com/photo-1596720426673-e4e14290f0cc?auto=format&fit=crop&w=800&q=80" alt="Equipamento de transmissão">
+
+        <h3>3. Display</h3>
+        <p>Apresenta informações escritas, números e dados (como painéis de senhas ou alertas em espaços públicos).</p>
+
+        <h3>Tabela Comparativa (Parte E)</h3>
+        <table class="tabela-comparativa">
+            <tr>
+                <th>Recurso</th>
+                <th>O que comunica?</th>
+                <th>Possível aplicação</th>
+                <th>Limitações/adaptações</th>
+            </tr>
+            <tr>
+                <td>Matriz de LEDs</td>
+                <td>Sinais visuais, símbolos simples.</td>
+                <td>Aviso de atenção ou direção em ambientes barulhentos.</td>
+                <td>Baixa resolução, necessidade de contato visual.</td>
+            </tr>
+            <tr>
+                <td>Código Morse</td>
+                <td>Mensagens via luz ou som.</td>
+                <td>Pedido de socorro de emergência.</td>
+                <td>A pessoa precisa conhecer o código para decifrar.</td>
+            </tr>
+            <tr>
+                <td>Display</td>
+                <td>Textos e números claros.</td>
+                <td>Orientação em hospitais ou filas.</td>
+                <td>Pessoas com deficiência visual não conseguem ler.</td>
+            </tr>
+        </table>
+
+        <h3>Registro de Uso de IA (Parte G)</h3>
+        <p><strong>Ferramenta utilizada:</strong> Gemini (Google)</p>
+        <p><strong>Prompt exemplo:</strong> "Me explique como funciona uma matriz de LEDs para uma pessoa leiga."</p>
+        <p><em>*Nota: O grupo verificou o funcionamento cruzando informações com os projetos montados no Tinkercad.</em></p>
+    </div>
+
+    <!-- Script JavaScript para fazer as abas funcionarem -->
+    <script>
+        function abrirAba(evt, nomeDaAba) {
+            var i, tabcontent, tablinks;
+
+            // Esconde todo o conteúdo das abas
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Remove a classe "active" (cor diferente) de todos os botões
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Mostra a aba atual e adiciona "active" no botão clicado
+            document.getElementById(nomeDaAba).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Simula um clique na primeira aba para ela abrir automaticamente ao carregar o site
+        document.getElementById("abaPadrao").click();
+    </script>
+
+</body>
+</html>
